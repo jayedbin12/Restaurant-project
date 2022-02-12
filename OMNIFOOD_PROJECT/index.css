@@ -1,0 +1,527 @@
+/* *********************** */
+/* Featuren in Section */
+/* *********************** */
+
+.section-featured{
+    padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #666;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logos img{
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 60%;
+}
+
+/* *********************** */
+/* Section how */
+/* *********************** */
+
+.section-how{
+    padding: 9.6rem;
+}
+.container{
+    /* 1140px */
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    /* Substract 32px from both side */
+}
+.grid{
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+}
+.grid--2-cols{
+    /* Excat as 1fr 1fr */
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols{
+    grid-template-columns:  repeat(3, 1fr);
+}
+.grid--center-v{
+    align-items: center;
+}
+.heading-secondary{
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+.subheading{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+.step-number{
+    font-size: 9.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+.heading-tertiary{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    color: #333;
+}
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: rgb(156, 151, 151);
+}
+.step-img-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-img-box::before, .step-img-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.step-img-box::before{
+    
+    width: 60%;
+    /* 60% of parent's width */
+    padding-bottom: 60%;
+    /* height: 60%; */
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+.step-img-box::after{
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+.step-img{
+    width: 35%;
+    /* z-index: 2; */
+}
+
+/* *********************** */
+/* Meals Section */
+/* *********************** */
+
+.section-meals{
+    padding: 9.6rem;
+}
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.meal:hover{
+    transform: translate(0,-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.03);
+}
+.meal-content{
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tag{
+    margin: 1.2rem 0;
+    display: flex;
+    gap: 0.4rem;
+}
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #333;
+    border-radius: 10rem;
+    font-weight: 600;
+}
+.meal-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.1rem;
+}
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.meal-attribute{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.meal-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #e67e22;
+}
+.meal-img{
+    width: 100%;
+}
+.center-text{
+    text-align: center;
+}
+
+/* *********************** */
+/* List Section */
+/* *********************** */
+
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+.all-recipes{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.link:link, .link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+.link:hover, .link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+/* *********************** */
+/* Testimonials Section */
+/* *********************** */
+
+.section-testimonials{
+    background-color: #fdf2e9;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+}
+.testimonials-container{
+    padding: 9.6rem;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 4.8rem;
+}
+.tesimonial-img{
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+.tesimonial-text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+.tesimonial-name{
+    font-size: 1.6rem;
+    color: rgb(233, 103, 103);
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+.gallery-item{
+    overflow: hidden;
+}
+.gallery-item img{
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+/* It overflows.. so we need to set overflow hidden in the mother class */
+.gallery-item img:hover{
+    transform: scale(1.1);
+}
+
+/* *********************** */
+/* Pricing Section */
+/* *********************** */
+
+.cen{
+    text-align: center;
+}
+.section-pricing{
+    padding: 9.6rem 0;
+}
+.pricing-plan{
+    border-radius: 11px;
+    width: 75%;
+}
+.pricing-plan--starter{
+    justify-self: end;
+    border: 2px solid #fdf2e9;
+    padding: 4.6rem;
+}
+.pricing-plan--complete{
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+}
+.pricing-plan--complete::after{
+    content: "Best value!";
+    position: absolute;
+    top: 5%;
+    right: -8%;
+
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 3.2rem;
+    transform: rotate(45deg);
+}
+.plan-header{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+.plan-name{
+    color: #cf711f;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+.plan-price{
+    font-size: 7.8rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.plan-price span{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-right: 0.8rem;
+}
+.plan-text{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #6f6f6f;
+}
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+/* Resueable grid with 4 columns */
+
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
+}
+.grid--4-cols{
+    grid-template-columns:  repeat(4, 1fr);
+}
+.grid--5-cols{
+    grid-template-columns:  repeat(5, 1fr);
+}
+
+/* *********************** */
+/* Feature Section */
+/* *********************** */
+
+.plan-details{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+.feature-icon{
+    color: #e67e22;
+    height: 2.4rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+.feature-title{
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.feature-text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* *********************** */
+/* CTA Section */
+/* *********************** */
+
+.section-cta{
+    /* top right bottom left */
+    padding: 4.8rem 0 12.8rem 0;
+    /* top horizontal left */
+}
+
+.cta{
+    display: grid;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    grid-template-columns: 2fr 1fr;
+    border-radius: 11px;
+    /* height: 50rem; */
+    background-image: linear-gradient(to right bottom, #eb984e,#e67e22);
+    overflow: hidden;
+}
+.cta-text-box{
+    color: #45260a;
+    padding: 4.8rem 6.4rem 6.4rem;
+}
+.cta .heading-secondary{
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+.cta-img-box{
+    background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.20),rgba(230, 125, 34, 0.25)), url("pics/eating.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.cta-form input, .cta-form select{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(230, 125, 34, 0.10);
+}
+.cta-form input::placeholder{
+    color: #aaa;
+}
+
+/* *********************** */
+/* Footer Section */
+/* *********************** */
+
+.footer{
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+.grid--footer{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.address{
+    margin-bottom: 2.4rem;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.footer-link:link, .footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+.footer-link:hover, .footer-link:active{
+    color: #555;
+}
+
+/* WEBSITE VIEW FINISHED */
